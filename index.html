@@ -12,15 +12,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#07090A; --surface:#151A17; --surface2:#1E2520; --text:#FFFFFF; --sub:rgba(255,255,255,.66);
-          --a1:#C6FF3D; --a2:#3DFFB0; --on:#07090A; --grad:linear-gradient(135deg,var(--a1),var(--a2)); }
+  :root { --bg:#F5EFE6; --surface:#FFFFFF; --surface2:#F0E4D6; --text:#2A2420; --sub:rgba(42,36,32,.6);
+          --a1:#C8714A; --a2:#D9A979; --on:#FFFFFF; --grad:linear-gradient(135deg,var(--a1),var(--a2)); }
   * { box-sizing:border-box; margin:0; padding:0; }
   html { scroll-behavior:smooth; }
   body { background:var(--bg); color:var(--text); font:17px/1.55 Inter,system-ui,sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
   h1,h2,h3 { font-family:Nunito,ui-rounded,system-ui,sans-serif; font-weight:900; letter-spacing:-.02em; line-height:1.08; }
   a { color:inherit; }
   .wrap { max-width:1120px; margin:0 auto; padding:0 20px; }
-  .glow { position:absolute; inset:-200px 0 auto; height:700px; pointer-events:none; background:radial-gradient(600px 380px at 50% 30%, #C6FF3D55, transparent 70%); }
+  .glow { position:absolute; inset:-200px 0 auto; height:700px; pointer-events:none; background:radial-gradient(600px 380px at 50% 30%, #C8714A40, transparent 70%); }
   nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; position:relative; z-index:2; }
   .brand { display:flex; gap:10px; align-items:center; font:900 22px Nunito,sans-serif; text-decoration:none; }
   .brand img { width:34px; height:34px; border-radius:9px; }
@@ -38,21 +38,21 @@
   .phones label { cursor:pointer; padding:7px 14px; border-radius:99px; background:var(--surface); border:1px solid transparent; }
   .phones input { display:none; }
   .phones label:has(input:checked) { border-color:var(--a1); color:var(--text); }
-  .btn { height:58px; padding:0 28px; border:0; border-radius:99px; background:var(--grad); color:var(--on); font:800 17px Nunito,sans-serif; cursor:pointer; box-shadow:0 10px 30px #C6FF3D55; white-space:nowrap; }
+  .btn { height:58px; padding:0 28px; border:0; border-radius:99px; background:var(--grad); color:var(--on); font:800 17px Nunito,sans-serif; cursor:pointer; box-shadow:0 10px 30px #C8714A40; white-space:nowrap; }
   .btn:active { transform:scale(.97); }
   .fine { font-size:13px; color:var(--sub); }
   .thanks { display:none; padding:18px 20px; border-radius:20px; background:var(--surface); max-width:460px; }
   .thanks b { font-family:Nunito,sans-serif; font-size:20px; }
-  .phone { width:100%; max-width:330px; margin:0 auto; border-radius:48px; padding:10px; background:#000; box-shadow:0 30px 80px rgba(0,0,0,.6); }
+  .phone { width:100%; max-width:330px; margin:0 auto; border-radius:48px; padding:10px; background:#000; box-shadow:0 30px 60px rgba(60,40,20,.18); }
   .phone img { width:100%; display:block; border-radius:39px; }
   .hero .phone { transform:rotate(3deg); }
-  .art img { width:100%; max-width:440px; display:block; margin:0 auto; border-radius:48px; box-shadow:0 0 80px #C6FF3D55; }
+  .art img { width:100%; max-width:440px; display:block; margin:0 auto; border-radius:48px; box-shadow:0 0 80px #C8714A40; }
   section { padding:90px 0; }
   .eyebrow { color:var(--a1); font-weight:700; font-size:14px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:12px; }
   h2 { font-size:clamp(34px,5vw,52px); margin-bottom:16px; }
   .sub { color:var(--sub); font-size:19px; max-width:620px; }
   .steps,.math { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:44px; }
-  .card { background:var(--surface); border-radius:28px; padding:28px;  }
+  .card { background:var(--surface); border-radius:28px; padding:28px; box-shadow:0 10px 30px rgba(60,40,20,.06); }
   .card .n { width:42px; height:42px; border-radius:50%; background:var(--grad); color:var(--on); font:900 20px Nunito,sans-serif; display:grid; place-items:center; margin-bottom:18px; }
   .card h3 { font-size:24px; margin-bottom:8px; }
   .card p { color:var(--sub); }
